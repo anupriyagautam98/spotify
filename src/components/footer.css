@@ -1,0 +1,92 @@
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  background-color: rgb(27, 26, 26);
+  width: 100%;
+  min-width: 600px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 15px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.playing {
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+
+.controls {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.controls .play-buttons i {
+  margin: 0 15px;
+  color: rgba(225, 225, 225, 0.9);
+}
+
+.fa-play-circle {
+  transform: scale(2);
+}
+
+.seek {
+  width: 70%;
+  height: 3px;
+  background-color: grey;
+  margin-top: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.playing img {
+  object-fit: cover;
+  width: 15%;
+  /* height: 20%; */
+}
+
+.playing img,
+.playing h5,
+.playing i {
+  margin: 0 8px;
+}
+
+.fa-heart {
+  color: rgb(196, 255, 108);
+}
+
+.vol-seek {
+  width: 25%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.options i,
+.options div {
+  margin-left: 15px;
+  color: grey;
+}
+
+.options div {
+  background-color: rgb(162, 160, 160);
+}
+
+.options div:hover {
+  background-color: teal;
+}
+
+.options {
+  align-items: center;
+}

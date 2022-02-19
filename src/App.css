@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+}
+
+.navbar {
+  position: fixed;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 210px;
+  top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  margin-left: 210px;
+  background-image: linear-gradient(grey, black 50%);
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.icon {
+  transform: scale(1.5);
+  margin-right: 20px;
+}
+
+.icons {
+  transform: scale(1.9);
+  margin-right: 20px;
+  padding-left: 2px;
+}
+
+.nav-brand {
+  margin-right: 60px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.nav-links,
+.CPLS {
+  width: 100%;
+}
+
+.nav-links div:hover,
+.CPLS div:hover {
+  color: white;
+}
+
+.nav-links div,
+.CPLS div {
+  text-decoration: none;
+  border-radius: 7px;
+  list-style: none;
+  color: rgb(156, 154, 154);
+  margin: 2px auto;
+  width: 90%;
+  padding: 10px;
+  font-size: 0.9rem;
+  transition: 200ms linear;
+  cursor: pointer;
+}
+
+.CPLS {
+  margin-top: 15px;
+}
+
+.CPLS {
+  font-weight: 600;
+}
+
+.fab {
+  transform: scale(2);
+  margin-right: 17px;
+}
+
+.line-br {
+  width: 80%;
+  height: 1px;
+  background-color: rgb(71, 69, 69);
+  margin: 5px auto;
+}
+
+.contentTopbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+  right: 0;
+  left: 0;
+  margin-left: 210px;
+  background-color: rgb(121, 121, 121);
+}
+
+.barId {
+  display: flex;
+}
+
+.barId div {
+  margin: 0 20px;
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+
+.pill1 {
+  padding: 10px 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 600;
+}
+
+.pill2 {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-user-circle {
+  transform: scale(1.8);
+  padding-left: 8.5px;
+  color: grey;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.fa-caret-down {
+  padding-right: 6px;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-left,
+.fa-chevron-circle-right {
+  transform: scale(1.9);
+  margin: 0 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  padding-left: 35px;
+}
+
+.goodMorning {
+  margin-top: 80px;
+}
+
+.goodMorning h1 {
+  font-weight: 700;
+  color: white;
+}
+
+.morning-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.morning-divs {
+  display: flex;
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: rgba(115, 118, 115, 0.2);
+  color: white;
+  width: 35%;
+  min-width: 250px;
+  max-width: 300px;
+  margin: 10px 11px 10px 0;
+  height: 10vw;
+  min-height: 70px;
+  align-items: center;
+  max-height: 80px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.morning-divs img {
+  object-fit: cover;
+  width: 30%;
+  height: 100%;
+}
+
+.morning-divs h2 {
+  margin-left: 15px;
+  font-size: 1rem;
+}
+
+.recent-container {
+  display: flex;
+}
+
+.recent-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  line-break: auto;
+  max-width: 200px;
+  min-width: 180px;
+  margin: 5px 20px 15px 0;
+  border-radius: 5px;
+  background-color: rgba(225, 225, 225, 0.1);
+  color: white;
+  cursor: pointer;
+}
+
+.recent-card img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.recent-card h4,
+.recent-card p {
+  margin: 0;
+}
+
+.recent-card p {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+h1 {
+  color: white;
+}
+
+.recentlyPlayed {
+  margin-top: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+
+.hidden {
+  color: black;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 801px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.pill1 {
+  padding: 10px 40px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 600;
+}
+
+.pill2 {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .pill1,
+  .pill2 {
+    display: none;
+  }
+}
+
+.install-now {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-bottom: 75px;
+}
+
+.more {
+  margin-top: 25px;
+}

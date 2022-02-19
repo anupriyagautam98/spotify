@@ -1,0 +1,107 @@
+.tracks {
+  background: linear-gradient(grey, black);
+  margin-top: 60px;
+  margin-left: 210px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  min-width: 700px;
+}
+
+.details {
+  display: flex;
+}
+
+.details img {
+  width: 20%;
+  margin: 20px;
+  object-fit: cover;
+  box-shadow: 1px 1px 8px 4px rgba(0, 0, 0, 0.5);
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 20px 0;
+  justify-content: flex-end;
+}
+
+.track-details h1,
+.track-details h3,
+.track-details h4,
+.track-details p {
+  margin: 2px;
+  color: rgb(174, 174, 174);
+}
+
+.track-details h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.track-details h3 {
+  font-size: 1rem;
+}
+
+.track-details h4 {
+  font-size: 1.5rem;
+}
+
+.track-details p strong {
+  color: white;
+}
+
+.track-tables {
+  /* margin-top: 20px; */
+  color: rgb(175, 175, 175);
+}
+
+.track-tables table {
+  width: 100%;
+}
+
+.track-tables table thead tr th {
+  text-align: left;
+  font-weight: 100;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.track-tables table tbody tr td {
+  padding-left: 15px;
+}
+
+.table-img-div {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+tr img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.play-heart-dots {
+  color: white;
+  padding-left: 10px;
+}
+
+.play-heart-dots i {
+  transform: scale(1.5);
+  margin: 40px 35px;
+}
+
+.play-heart-dots .fa-heart {
+  color: white;
+  margin-left: 5px;
+  margin-right: 0px;
+}
+
+.play-heart-dots .fa-play-circle {
+  transform: scale(3);
+  color: rgb(143, 255, 143);
+}
