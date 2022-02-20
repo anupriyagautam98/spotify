@@ -63,6 +63,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
+    console.log(process.env.REACT_APP_CLIENT_ID)
     axios("https://accounts.spotify.com/api/token", {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
