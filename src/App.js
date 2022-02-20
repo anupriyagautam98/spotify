@@ -13,12 +13,15 @@ import {
 import Tracks from "./components/Tracks";
 
 function App() {
-  const clientID = "306f45b1f1f24f76b861632e8b7d41de";
-  const clientSecret = "8421c6d230ca49c4b0fff92f316fa734";
+  // const clientID =process.env.REACT_APP_CLIENTID ; 
+  // const clientSecret = process.env.REACT_APP_CLIENTSECRET ;
   const [token, setToken] = useState("");
   const [newReleases, setNewReleases] = useState([]);
   const [loading, setLoading] = useState(true);
   const [tracks, setTracks] = useState([]);
+
+  // console.log(clientID)
+  console.log(process.env.REACT_APP_CLIENT_ID)
 
   const getNewReleases = async (token) => {
     const url =
@@ -64,7 +67,7 @@ function App() {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
         Authorization:
-          "Basic " + btoa(clientID + ":" + clientSecret),
+          "Basic " + btoa(process.env.REACT_APP_CLIENT_ID + ":" + process.env.REACT_APP_CLIENT_SECRET),
       },
       data: "grant_type=client_credentials",
       method: "POST",
